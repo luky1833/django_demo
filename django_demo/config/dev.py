@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from config import RUN_VER
+
 if RUN_VER == 'open':
     from blueapps.patch.settings_open_saas import *  # noqa
 else:
@@ -27,7 +28,7 @@ DEBUG = True
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': APP_CODE,
+        'NAME': 'django-demo',
         'USER': 'root',
         'PASSWORD': '',
         'HOST': 'localhost',
